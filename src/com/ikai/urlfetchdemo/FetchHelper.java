@@ -8,7 +8,7 @@ import com.google.appengine.api.urlfetch.HTTPRequest;
 
 public class FetchHelper {
 
-	protected static final String signGuestBookUrl = "http://bootcamp-demo.appspot.com/sign";
+	protected static final String signGuestBookUrl = "http://your-guestbook.appspot.com/sign";
 	
 	public static HTTPRequest makeGuestbookPostRequest(String name, String content){
 		HTTPRequest request = null;
