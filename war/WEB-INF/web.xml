@@ -14,6 +14,12 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<servlet-name>JavaAsyncUrlFetchDemo</servlet-name>
 		<servlet-class>com.ikai.urlfetchdemo.JavaAsyncUrlFetchDemoServlet</servlet-class>
 	</servlet>
+
+	<servlet>
+		<servlet-name>GetTwitterFeed</servlet-name>
+		<servlet-class>com.ikai.urlfetchdemo.GetTwitterFeedServlet</servlet-class>
+	</servlet>
+
 	
 	<servlet-mapping>
 		<servlet-name>JavaSyncUrlFetchDemo</servlet-name>
@@ -24,7 +30,12 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<servlet-name>JavaAsyncUrlFetchDemo</servlet-name>
 		<url-pattern>/async</url-pattern>
 	</servlet-mapping>
-		
+	
+	<servlet-mapping>
+		<servlet-name>GetTwitterFeed</servlet-name>
+		<url-pattern>/twitter_feed</url-pattern>
+	</servlet-mapping>
+			
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
 	</welcome-file-list>
